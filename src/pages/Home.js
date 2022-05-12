@@ -65,8 +65,8 @@ const Home = (props) => {
 	const matchesLg = useMediaQuery(theme.breakpoints.up("lg"))
 	const matchesMd = useMediaQuery(theme.breakpoints.up("md"))
 
-	const iconSize = 175 * (window.innerHeight / 1000)
-	const fontSize = 40 * (window.innerHeight / 1000)
+	const iconSize = 130 * (window.innerHeight / 1000)
+	const fontSize = 35 * (window.innerHeight / 1000)
 	return (
 		<div
 			style={{
