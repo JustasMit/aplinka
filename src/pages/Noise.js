@@ -1,10 +1,10 @@
 import React from "react"
 import Iframe from "react-iframe"
 
-const Air = () => {
+const Noise = () => {
 	return (
 		<Iframe
-			url="https://experience.arcgis.com/experience/c7d16712c5ab4c6087a1eede67491329/"
+			url="https://vplanas.maps.arcgis.com/apps/webappviewer3d/index.html?id=1fd7d1bb7fdc4d638d9f114a4d8b8a9f"
 			position="static"
 			width="100%"
 			height={window.innerHeight - 90}
@@ -12,4 +12,4 @@ const Air = () => {
 	)
 }
 
-export default Air
+export default Noise

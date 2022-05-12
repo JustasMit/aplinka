@@ -5,6 +5,7 @@ import * as intl from "@arcgis/core/intl"
 
 import Home from "./pages/Home"
 import Air from "./pages/Air"
+import Noise from "./pages/Noise"
 
 import Nav from "./components/Nav/Nav"
 import "./i18n"
@@ -41,6 +42,7 @@ const App = () => {
 					<Route path=":lng" element={<Nav />}>
 						<Route index element={<Home />} />
 						<Route path="oras/*" element={<Air />} />
+						<Route path="triuksmas/*" element={<Noise />} />
 					</Route>
 					<Route path="*" element={<Navigate to={`/${i18n.language}`} />} />
 				</Routes>
