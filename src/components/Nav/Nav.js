@@ -31,7 +31,7 @@ const Nav = () => {
 		if (lng === "lt" || lng === "en") {
 			i18n.changeLanguage(lng)
 		} else {
-			navigate(`/lt`)
+			navigate(`/aplinka/lt`)
 		}
 	}, [lng])
 
@@ -41,7 +41,7 @@ const Nav = () => {
 				<AppBar position="static" sx={{ backgroundColor: "#fcfcfcff", height: 90 }}>
 					<Toolbar className="homeNav">
 						<HomeIcon />
-						{location.pathname !== `/${i18n.language}` ? (
+						{location.pathname !== `/aplinka/${i18n.language}` ? (
 							<MenuToggle menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 						) : (
 							<Box ></Box>
@@ -53,7 +53,7 @@ const Nav = () => {
 				</AppBar>
 			</Box>
 
-			{location.pathname !== `/${i18n.language}` && (
+			{location.pathname !== `/aplinka/${i18n.language}` && (
 				<Collapse sx={{ width: "100%", position: "absolute", zIndex: 99 }} in={menuOpen}>
 					<Home setMenuOpen={setMenuOpen} />
 				</Collapse>

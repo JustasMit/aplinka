@@ -16,7 +16,7 @@ const LanguageList = (props) => {
 
 	const handleLanguageChange = (lng) => {
 		if (i18n.language !== lng) {
-			navigate(`/${lng}${window.location.pathname.slice(3)}`)
+			navigate(`/aplinka/${lng}${window.location.pathname.slice(3)}`)
 		}
 		props.setLanguageOpen(false)
 	}

@@ -15,7 +15,7 @@ const HomeIcon = () => {
 			component={vlnIcon}
 			inheritViewBox
 			sx={{ ml: 1, color: "#000000ff", fontSize: 100, cursor: "pointer" }}
-			onClick={() => navigate(`/${i18n.language}`)}
+			onClick={() => navigate(`/aplinka/${i18n.language}`)}
 		/>
 	)
 }
